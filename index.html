@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" media="screen" href="assets\css\style.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="./assets/css/reset.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
         crossorigin="anonymous">
 
@@ -13,14 +15,16 @@
 
 <body>
     <div class="card-fluid text-white">
-        <img src="assets\images\mindreaderx.jpg" class="card-img" alt="professsorX" height="625">
+        <img src="assets\images\psychic3.jpg" class="card-img" alt="mindreader" height="625">
         <div class="card-img-overlay">
             <h1 class="card-title">The Psychic Game</h1><br>
-            <p><h5>Guess what letter I am thinking of..........</h5></p><br><br><br>
-            <p>Wins:</p><br>
-            <p>Losses:</p><br>
-            <p>Guesses Left:</p><br>
-            <p>Your Guesses so far:</p><br>
+            <p>
+                <h5>Guess what letter I am thinking of..........</h5>
+            </p><br><br><br>
+            <p>Wins : <b id="wins-text">0</b></p><br>
+            <p>Losses : <b id="losses-text"> 0</b></p><br>
+            <p>Guesses Left : <b id="guessesLeft-text">9</b></p><br>
+            <p>Your Guesses so far : <b id="yourGuesses-text">...</b></p><br>
         </div>
     </div>
 
