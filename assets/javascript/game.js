@@ -30,6 +30,8 @@ document.onkeyup = function (event) {
     //set the guesses to 9 tries
     function resetGame() {
 
+        computerGuess = choices[Math.floor(Math.random() * choices.length)];
+        console.log(computerGuess);
         guessesLeft = 9;
         playerGuesses = [];
 
@@ -45,6 +47,7 @@ document.onkeyup = function (event) {
         wins++;
         // change playerWinsText
         playerWinsText.textContent = wins;
+        resetGame();
 
     };
 
@@ -54,7 +57,7 @@ document.onkeyup = function (event) {
         losses++;
         // change playerLossesText
         playerLossesText.textContent = losses;
-
+        resetGame();
     };
 
     //reset
